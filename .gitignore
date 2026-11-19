@@ -1,0 +1,14 @@
+node_modules/
+.workspace-data/
+npm-debug.log*
+dist/
+release/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.sqlite
+*.sqlite-*
+/.codex/hooks.json

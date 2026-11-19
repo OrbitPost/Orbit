@@ -1,0 +1,36 @@
+{
+  "name": "orbit",
+  "productName": "Orbit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local desktop workspace for social accounts, post planning, and engagement reports.",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "verify": "npm run typecheck && npm test && npm run build",
+    "package:windows": "npm run build && node scripts/package.mjs"
+  },
+  "dependencies": {
+    "@fullcalendar/react": "7.1.5",
+    "lucide-react": "1.75.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-is": "19.3.1",
+    "recharts": "3.11.0",
+    "temporal-polyfill": "1.0.8"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "electron": "45.3.4",
+    "typescript": "7.0.2",
+    "vite": "8.3.8"
+  }
+}
