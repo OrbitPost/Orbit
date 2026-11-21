@@ -38,5 +38,6 @@ After the first build, double-click **Start Orbit.cmd** to open Orbit. Closing O
 - `npm.cmd run dev:web` opens the renderer preview with fictional sample data.
 - `npm.cmd run verify` runs type checks, tests, and the production build.
 - `npm.cmd run package:windows` builds a portable copy in `release`.
+- Use `$commit-work` in Codex to review, stage, and write commits for this repository. [Repository skill](.agents/skills/commit-work/SKILL.md) · [Upstream revision](https://github.com/softaworks/agent-toolkit/tree/3027f20f3181758385a1bb8c022d4041dfb4de84/skills/commit-work)
 
 See the [product brief](PRODUCT.md), [desktop architecture](docs/architecture/orbit-desktop-architecture.md), and [implementation tracker](tasks/todo.md).
